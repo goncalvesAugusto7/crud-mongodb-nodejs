@@ -42,7 +42,7 @@ app.get("/data", async (request, response) => {
 });
 
 // UPDATE
-app.put("data/:id", async (request, response) => {
+app.put("/data/:id", async (request, response) => {
   try {
     const newdata = await dataModel.findByIdAndUpdate(
       request.params.id,
